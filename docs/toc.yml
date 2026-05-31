@@ -1,0 +1,10 @@
+- name: Home
+  href: README.md
+- name: Requirements
+  href: requirements.md
+- name: Architecture
+  href: architecture/
+  topicHref: architecture/README.md
+- name: Decisions
+  href: decisions/
+  topicHref: decisions/README.md
