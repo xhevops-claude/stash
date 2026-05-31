@@ -58,10 +58,14 @@ The web tool is a reader/scanner over whatever drives are currently visible — 
 | Catalog folder name | `.catalog` | Clear, self-explanatory. Personality (e.g. `.shelf`) deferred until virtual-paths feature lands |
 | Database | SQLite | Portable single file, no server, FTS5 search |
 | Drive identification | UUID stored in catalog | Survives remount under different paths |
+| Runtime | .NET 10 (C#) | Cross-platform, async-first I/O, strong filesystem and crypto APIs out of the box |
+| Web framework | ASP.NET Core + Blazor | One stack from API to UI; SignalR built-in for streaming scan progress |
 
 ## Open Decisions
 
-- **Language / stack** — not yet chosen.
+- **Blazor rendering mode** — Server vs WebAssembly vs unified. Server likely fits best given the local-tool, direct-filesystem model.
+- **SQLite access** — raw `Microsoft.Data.Sqlite` vs Dapper vs EF Core.
+- **Hash algorithm** — SHA-256 (built-in) vs BLAKE3 (faster, needs NuGet).
 - **Duplicate detection algorithm** — likely tiered (size filter → partial hash → full hash) to balance speed and correctness. To be designed before implementing dupes feature.
 - **File-type scope** — initial prototype indexes all files; later we may add type-specific metadata extractors (EXIF for images, ID3 for audio, etc.).
 

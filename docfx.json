@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/toc.yml"
+        ],
+        "src": "docs"
+      },
+      {
+        "files": [
+          "README.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ],
+        "src": "docs"
+      }
+    ],
+    "output": "_site",
+    "globalMetadata": {
+      "_appName": "Stash",
+      "_appTitle": "Stash — Documentation",
+      "_appFooter": "Stash docs · powered by DocFX",
+      "_enableSearch": true,
+      "_disableContribution": true
+    },
+    "template": [
+      "default",
+      "modern"
+    ]
+  }
+}
