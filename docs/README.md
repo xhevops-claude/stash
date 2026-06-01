@@ -6,7 +6,7 @@ These docs are the **source of truth** for the design. Decisions land here as th
 
 ## Where to find things
 
-- **[Requirements](./requirements.md)** — what Stash does and why.
+- **[Requirements](./requirements/)** — what Stash does and why.
 - **[Architecture](./architecture/)** — how it's built. Components, data model, key flows.
 - **[Decisions](./decisions/)** — Architecture Decision Records (ADRs). One file per major decision, immutable once accepted.
 

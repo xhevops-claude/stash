@@ -4,14 +4,14 @@ Read this first. It's how we collaborate on this project.
 
 ## What this is
 
-Stash is a web-based catalog for disks/drives — see [README.md](./README.md) and [docs/requirements.md](./docs/requirements.md).
+Stash is a web-based catalog for disks/drives — see [README.md](./README.md) and [docs/requirements](./docs/requirements/).
 
 ## Working style
 
 - **Discuss first, code later.** Big decisions get talked through before code lands. Default cadence is chat → agree → act.
 - **Default to chat output.** Brainstorming, naming, weighing options — keep it in chat. Write to disk only when the user asks, or when the scope is clearly settled.
 - **Show diagrams inline.** ASCII in chat first so the user actually sees them. Commit mermaid to docs only after the shape is agreed.
-- **Prototype-first.** Ship the boring functional version first; personality and polish are deferred (see [docs/requirements.md → Future](./docs/requirements.md#future--post-prototype)).
+- **Prototype-first.** Ship the boring functional version first; personality and polish are deferred (see [docs/requirements → Future](./docs/requirements/README.md#future)).
 - **Confirm before destructive actions.** Renames, deletes, restructuring, edits to committed files.
 - **Push back with reasoning.** Don't be a yes-machine. Recommend with tradeoffs.
 
@@ -72,7 +72,7 @@ Open within the stack:
 
 `docs/` is the source of truth — decisions land there as they're made.
 
-- `docs/requirements.md` — the WHAT
+- `docs/requirements/` — the WHAT
 - `docs/architecture/` — the HOW (folder of focused topics; see folder README)
 - `docs/decisions/` — Architecture Decision Records (numbered, immutable once accepted)
 - `docfx.json` — DocFX config for the rendered docs site (`docfx --serve` once .NET 10 + DocFX are installed)

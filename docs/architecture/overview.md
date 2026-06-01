@@ -11,5 +11,5 @@
 
 ## Related
 
-- [Requirements](../requirements.md)
+- [Requirements](../requirements/)
 - [Architecture index](./README.md)

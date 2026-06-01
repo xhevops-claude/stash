@@ -1,7 +1,8 @@
 - name: Home
   href: index.md
 - name: Requirements
-  href: requirements.md
+  href: requirements/
+  topicHref: requirements/index.md
 - name: Architecture
   href: architecture/
   topicHref: architecture/index.md

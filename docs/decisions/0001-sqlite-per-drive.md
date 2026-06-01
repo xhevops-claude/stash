@@ -50,4 +50,4 @@ Smaller and lighter than SQLite. But we'd lose: SQL queries, FTS5 full-text sear
 ## Related
 
 - [Architecture: Data Model](../architecture/data-model.md)
-- [Requirements](../requirements.md)
+- [Requirements](../requirements/)
