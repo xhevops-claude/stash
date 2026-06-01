@@ -23,9 +23,36 @@ Stash is a web-based catalog for disks/drives — see [README.md](./README.md) a
   - Don't ask permission, just do it. Confirm the slug only if ambiguous.
   - Skip for doc edits, renames, in-progress refinements, project-admin tasks.
 - **PRs merge only after CI is fully green** — build pipeline complete, every workflow finished and passing. Don't merge with pending checks. Don't merge with failures. If checks fail, fix on the branch and push again — don't bypass.
-- **After merge, delete the feature branch** — both remote (the PR head on GitHub) and local. Keeps the branch list clean.
+- **After merge, delete the local feature branch** — `git checkout main && git pull --ff-only && git branch -d <branch>`. The remote side is automatic via the `delete_branch_on_merge` repo setting (see [Repo settings](#repo-settings) below).
 - Do **not** commit unless explicitly asked.
 - Do **not** push unless explicitly asked.
+
+## PR lifecycle
+
+End-to-end flow for shipping any change to `main`:
+
+```
+branch → commit → push -u → gh pr create → gh pr checks --watch → gh pr merge --merge → local cleanup
+```
+
+- **Open the PR** with `gh pr create --base main --title "..." --body "..."`. Body uses `## Summary` + `## Test plan` sections.
+- **Watch CI** with `gh pr checks <pr> --watch` (blocks until all checks finish).
+- **Merge** with `gh pr merge <pr> --merge` once CI is fully green.
+- **Local cleanup:** `git checkout main && git pull --ff-only && git branch -d <branch>`.
+
+The repo has `delete_branch_on_merge: true`, so GitHub auto-deletes the source branch on merge — no `--delete-branch` flag needed on `gh pr merge`.
+
+## Repo settings
+
+Auto-delete head branches on merge is **on** for this repo. Verify and (if needed) enable on every new project repo before opening the first PR:
+
+```bash
+# Check
+gh api repos/<owner>/<repo> --jq .delete_branch_on_merge
+
+# Enable if false
+gh api -X PATCH repos/<owner>/<repo> -f delete_branch_on_merge=true
+```
 
 ## Stack
 
