@@ -10,7 +10,7 @@ Early planning. No code yet — design is being captured in [docs/](./docs/).
 
 ## Docs
 
-- [Requirements](./docs/requirements.md) — what Stash does and why.
+- [Requirements](./docs/requirements/) — what Stash does and why.
 
 ## Planned features
 

@@ -1,0 +1,14 @@
+- name: Overview
+  href: index.md
+- name: R1 — Indexing
+  href: indexing.md
+- name: R2 — Metadata captured
+  href: metadata.md
+- name: R3 — Search
+  href: search.md
+- name: R4 — Duplicate detection
+  href: duplicate-detection.md
+- name: R5 — Drive identity & management
+  href: drive-management.md
+- name: R6 — File operations
+  href: file-operations.md

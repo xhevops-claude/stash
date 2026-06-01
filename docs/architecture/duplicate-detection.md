@@ -12,11 +12,11 @@
 
 ## Open questions
 
-- Hash algorithm choice — SHA-256 vs BLAKE3 (see [requirements.md → Open Decisions](../requirements.md#open-decisions))
+- Hash algorithm choice — SHA-256 vs BLAKE3 (see [requirements → Open Decisions](../requirements/README.md#open-decisions))
 - Quick-hash chunk size — 4KB is a starting point but worth measuring
 
 ## Related
 
-- [Requirements → Duplicate Detection](../requirements.md)
+- [Requirements → Duplicate Detection](../requirements/duplicate-detection.md)
 - [Data Model](./data-model.md)
 - [Architecture index](./README.md)

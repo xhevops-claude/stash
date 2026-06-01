@@ -12,5 +12,5 @@
 
 ## Related
 
-- [Requirements → Drive Identity & Management](../requirements.md)
+- [Requirements → Drive Identity & Management](../requirements/drive-management.md)
 - [Architecture index](./README.md)

@@ -14,6 +14,6 @@
 
 ## Related
 
-- [Requirements → Indexing](../requirements.md)
+- [Requirements → Indexing](../requirements/indexing.md)
 - [Data Model](./data-model.md)
 - [Architecture index](./README.md)

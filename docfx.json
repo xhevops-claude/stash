@@ -25,7 +25,7 @@
     "output": "_site",
     "globalMetadata": {
       "_appName": "Stash",
-      "_appTitle": "Stash — Documentation",
+      "_appTitle": "Stash",
       "_appFooter": "Stash docs · powered by DocFX",
       "_enableSearch": true,
       "_disableContribution": true

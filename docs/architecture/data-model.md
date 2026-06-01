@@ -12,6 +12,6 @@
 
 ## Related
 
-- [Requirements](../requirements.md)
+- [Requirements](../requirements/)
 - [ADR 0001 — SQLite per drive](../decisions/0001-sqlite-per-drive.md)
 - [Architecture index](./README.md)
