@@ -1,5 +1,5 @@
 - name: Overview
-  href: README.md
+  href: index.md
 - name: System Overview
   href: overview.md
 - name: Data Model

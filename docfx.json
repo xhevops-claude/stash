@@ -8,12 +8,10 @@
           "**/*.md",
           "**/toc.yml"
         ],
+        "exclude": [
+          "**/README.md"
+        ],
         "src": "docs"
-      },
-      {
-        "files": [
-          "README.md"
-        ]
       }
     ],
     "resource": [
