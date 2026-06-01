@@ -1,10 +1,10 @@
 - name: Home
-  href: README.md
+  href: index.md
 - name: Requirements
   href: requirements.md
 - name: Architecture
   href: architecture/
-  topicHref: architecture/README.md
+  topicHref: architecture/index.md
 - name: Decisions
   href: decisions/
-  topicHref: decisions/README.md
+  topicHref: decisions/index.md
