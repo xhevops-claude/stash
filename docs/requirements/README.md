@@ -46,6 +46,7 @@ Explicitly **deferred** — not in prototype scope, but noted so today's choices
 
 - **Virtual paths / shelves** — group files from different physical paths into albums/shelves. May revisit the `.catalog/` folder name for more personality (`.shelf/`, `.atlas/`).
 - **Quick discovery / drive-state sync** — lightweight path-only scan that flags orphaned records (in catalog, gone from disk). Idempotent; user confirms removals.
+- **Disc comparison** — diff exactly two drives (identical / differs / only-here / moved), by relative path and content hash. Distinct from [R4](./duplicate-detection.md): R4 *groups* dupes, this *reconciles* two drives. Relies on [relative paths](../decisions/0002-relative-paths.md).
 - **Read-only drive support** — the current model assumes writable drives.
 - **Background / scheduled rescans** — initial version is on-demand only.
 - **Richer metadata extraction** — EXIF (incl. GPS), ID3, video codecs, document authors.
