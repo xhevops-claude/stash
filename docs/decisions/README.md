@@ -25,3 +25,5 @@ Standard sections:
 | #    | Title                                            | Status   |
 | ---- | ------------------------------------------------ | -------- |
 | [0001](./0001-sqlite-per-drive.md) | SQLite per drive                  | Accepted |
+| [0002](./0002-relative-paths.md) | Relative paths                      | Accepted |
+| [0003](./0003-change-detection-and-hashing.md) | Change detection & hashing | Accepted |

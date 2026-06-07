@@ -2,3 +2,7 @@
   href: index.md
 - name: 0001 — SQLite per drive
   href: 0001-sqlite-per-drive.md
+- name: 0002 — Relative paths
+  href: 0002-relative-paths.md
+- name: 0003 — Change detection & hashing
+  href: 0003-change-detection-and-hashing.md
